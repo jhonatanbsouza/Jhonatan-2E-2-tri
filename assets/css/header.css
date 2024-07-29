@@ -1,7 +1,23 @@
-.cabecalho{
-    display: flex;
-    justify-content: space-between ;
+body {
+    background-color: var(--cor-de-fundo);
 }
+.cabecalho {
+    display: flex;
+     justify-content: space-between;
+     background-color: var(--branco);
+     align-items: center;
+}
+
+.container{
+
+    margin: 0px 20px;
+    padding: 0.5; 
+}
+    .lista-titulo{
+    background-color: var(--branco);
+    color: var(--laranja);  
+}
+
 .menu-hamburguer{
     width: 24px;
     height: 24px;
@@ -9,11 +25,21 @@
     background-image: url(../img/AluraBooks/Menu.svg);
     background-position: center;
     background-repeat: no-repeat;
-}
-.menu-lista{
-    display: none;
+
 }
 
-.menu-checkbox:checked ~ .menu-lista{
+.menu-lista {
+    display: none;
+    position: absolute;
+    width: 60vw;
+}
+
+.menu-checkbox:checked ~.menu-lista{
     display: block;
+}
+
+.lista-item {
+    padding: 1em;
+    background-color: var(--branco);
+
 }
