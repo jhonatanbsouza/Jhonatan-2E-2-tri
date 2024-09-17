@@ -1,33 +1,47 @@
+body {
+    background-color: var(--cor-de-fundo);
+}
+.cabecalho {
+    display: flex;
+     justify-content: space-between;
+     background-color: var(--branco);
+     align-items: center;
+}
+
+.container{
+
+    margin: 0px 20px;
+    padding: 0.5; 
+}
+    .lista-titulo{
+    background-color: var(--branco);
+    color: var(--laranja);  
+}
+
 .menu-hamburguer{
-    background-image: url(../img/Menu.svg);
     width: 24px;
     height: 24px;
     display: inline-block;
+    background-image: url(../img/AluraBooks/Menu.svg);
     background-position: center;
     background-repeat: no-repeat;
+
 }
-.cabecalho{
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-}
-.menu-lista{
+
+.menu-lista {
     display: none;
     position: absolute;
-    width: 30vh;
-    text-transform: uppercase;
+    width: 60vw;
 }
-.seletor-menu:checked ~ .menu-lista{
+.menu-checkbox{
+    display: none;
+}
+.menu-checkbox:checked ~.menu-lista{
     display: block;
 }
-.menu-lista-titulo, .menu-lista-item{
-    background-color: white;
+
+.lista-item {
     padding: 1em;
-}
-.menu-lista-titulo{
-    color: var(--laranja);
-    font-weight: 700;
-}
-.seletor-menu{
-    display: none;
+    background-color: var(--branco);
+
 }

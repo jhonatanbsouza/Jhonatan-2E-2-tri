@@ -1,9 +1,69 @@
-/*
-    Cor de texto laranja e cor de fundo branca
-    Alinhar texto ao centro 
-    Todas as letras maíusculas (usar o transform)
-    Fonte com tamanho de 18px
-    Peso da fonte de 700
-    Espaçamento interno 1em pra cima, 0 pra direita, 0.5 para baixo
-        0 para a esquerda
-*/
+.carrossel-titulo{
+    background-color: white;
+
+    color: var(--laranja);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-prev::after,.swiper-button-next::after{
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.card{
+    background-color: var(--branco);
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px black;
+    margin: 1em;
+    padding: 1em;
+    max-width: 400px;
+}
+
+.card-descricao{
+    display: flex;
+}
+
+.card-botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes{
+    display: flex;
+}
+
+.descricao-titulo{
+    color: var(--laranja);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.descricao-titulo-livro{
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.descricao-texto{
+    font-size: 14px;
+}
+
+.botao-ancora{
+    background-color: var(--laranja);
+    padding: 1em 2.2em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+}
