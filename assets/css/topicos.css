@@ -1,0 +1,30 @@
+.topicos{
+    background-image: var(--azul-degrade);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.topicos-titulo{
+    color: var(--branco);
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.topicos-lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.topicos-item{
+    margin: 2em 0.5em;
+}
+
+.topicos-link{
+    text-decoration: none; /* Tira o sublinhado do link */
+    color: var(--branco); /* Muda cor para branco */
+    background-color: var(--laranja); /* Muda a cor de fundo para laranja */
+    padding: 1em; /* Afasta os links da borda 'deles mesmos', ou seja, internamente */
+    font-size: 14px; /* Tamanho da fonte */
+    font-weight: 700; /* Peso da fonte */
+}
